@@ -1,0 +1,27 @@
+.jumbotron {
+text-align: center;
+color: black;
+background-color: ivory;
+}
+
+body {
+  background-color: teal;
+}
+
+.col-sm-3 {
+  background-color: ivory;
+  border-radius: 10px;
+  padding-left: 30px;
+  margin: 10px 10px 10px 10px;
+}
+
+ input {
+  margin-left: 25px;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+button {
+  margin-left: 27px;
+  text-align: center;
+}

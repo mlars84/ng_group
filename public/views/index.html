@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>NG Group</title>
+    <script src="vendors/angular.min.js" charset="utf-8"></script>
+    <script src="scripts/ngGroup.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="vendors/bootstrap.css">
+    <link rel="stylesheet" href="styles/style.css">
+  </head>
+  <body ng-app="myApp">
+    <div class="jumbotron"><h1>PRIME NG Group</h1></div>
+    <div ng-controller="GroupController as gc">
+      <input type="text" placeholder="name" ng-model="gc.nameIn">
+      <input type="text" placeholder="description" ng-model="gc.descriptionIn">
+      <button ng-click="gc.addItem()">Add</button>
+      <div class="container">
+        <div ng-repeat="item in gc.groupItems" class="col-sm-3">
+          <p>{{item.name}}</p>
+          <h3>{{item.description}}</h3>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
